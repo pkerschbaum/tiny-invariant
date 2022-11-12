@@ -31,3 +31,4 @@ export default function invariant(
   const value: string = provided ? `${prefix}: ${provided}` : prefix;
   throw new Error(value);
 }
+invariant.assert = invariant;
